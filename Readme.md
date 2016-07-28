@@ -1,4 +1,4 @@
-# AWS Lambda function to use AWS Route 53 as dyndns provider
+# Amazon Lambda function to use AWS Route53 as DynDNS service
 
 The intended usage for this function is to provide a simple DDNS solution
 for your domain hosted on AWS Route 53. Just make your router / DDNS client call
@@ -53,7 +53,7 @@ Quick note for users of the AVM Fritz!Box:
 
 Unfortunately the Fritz!Box can send DDNS updates only unencrypted via HTTP,
 while AWS API Gateway provides only HTTPS. :( If you intend to use this solution
-with a FritzBox, you need an additional proxy in between which does HTTP->HTTPS
+with a Fritz!Box, you need an additional proxy in between which does HTTP->HTTPS
 translation. Make sure to provide your IP address in the query string or send
-and X-Forwarded-For header on the proxy, or the DDNS record will point to your
-proxy.
+a X-Forwarded-For header on the proxy, or the DDNS record will point to your
+proxy!
