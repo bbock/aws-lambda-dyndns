@@ -1,5 +1,7 @@
 # Amazon Lambda function to use AWS Route53 as DynDNS service
 
+UNMAINTAINED
+
 The intended usage for this function is to provide a simple DDNS solution
 for your domain hosted on AWS Route 53. Just make your router / DDNS client call
 the API gateway endpoint on each IP address change.
